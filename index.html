@@ -111,7 +111,26 @@ padding:20px;
 }
 
 </style>
+<script>
+function sendWhatsApp(){
 
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let message = document.getElementById("message").value;
+
+let text =
+"درخواست مشاوره حقوقی\n" +
+"نام: " + name + "\n" +
+"شماره تماس: " + phone + "\n" +
+"توضیحات: " + message;
+
+window.open(
+"https://wa.me/989183564263?text=" + encodeURIComponent(text),
+"_blank"
+);
+
+}
+</script>
 </head>
 
 <body>
