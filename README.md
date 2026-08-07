@@ -186,13 +186,59 @@ padding:25px;
 margin-top:30px;
 
 }
+input, textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-family:tahoma;
+box-sizing:border-box;
+}
 
+textarea{
+height:120px;
+}
+
+button{
+background:#c9a227;
+color:#07152f;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+}
 
 </style>
 
 </head>
 
+<script>
 
+function sendWhatsApp(){
+
+let name=document.getElementById("name").value;
+
+let phone=document.getElementById("phone").value;
+
+let message=document.getElementById("message").value;
+
+
+let text=
+"درخواست مشاوره حقوقی%0A"+
+"نام: "+name+"%0A"+
+"شماره تماس: "+phone+"%0A"+
+"توضیحات: "+message;
+
+
+window.open(
+"https://wa.me/989183564263?text="+text
+);
+
+}
+
+</script>
 <body>
 
 
@@ -337,7 +383,25 @@ margin-top:30px;
 
 </div>
 
+<div class="box">
 
+<h2>درخواست مشاوره حقوقی</h2>
+
+<p>
+برای دریافت مشاوره، اطلاعات خود را وارد کنید.
+</p>
+
+<input id="name" type="text" placeholder="نام و نام خانوادگی">
+
+<input id="phone" type="tel" placeholder="شماره تماس">
+
+<textarea id="message" placeholder="توضیح کوتاه درباره پرونده"></textarea>
+
+<button onclick="sendWhatsApp()">
+ارسال درخواست به واتساپ
+</button>
+
+</div>
 
 <footer>
 
