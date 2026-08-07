@@ -1,128 +1,351 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>وکیل علی آرمند | وکیل پایه یک دادگستری کرمانشاه</title>
+
+<meta name="description" content="وکیل علی آرمند، وکیل پایه یک دادگستری در کرمانشاه، ارائه خدمات حقوقی و کیفری، مشاوره و قبول وکالت پرونده‌ها.">
+
+<style>
+
 *{
-margin:0;
-padding:0;
 box-sizing:border-box;
 }
 
 body{
-font-family:Tahoma,sans-serif;
-background:#f4f6f8;
-color:#222;
+margin:0;
+font-family:tahoma, Arial;
+background:#f8f8f8;
+color:#333;
 line-height:1.8;
 }
 
 header{
-background:#0F172A;
+
+background:
+linear-gradient(rgba(8,18,45,.9),rgba(8,18,45,.95)),
+url("");
+
+background-color:#08152f;
+
 color:white;
-padding:80px 20px;
+text-align:center;
+padding:70px 20px;
+
+border-bottom:5px solid #c9a227;
+
 }
 
-.container{
-max-width:1200px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:50px;
-flex-wrap:wrap;
+header h1{
+
+font-size:38px;
+margin:10px;
+
 }
 
-.hero-text{
-flex:1;
+header h2{
+
+font-weight:normal;
+color:#e5c45a;
+
 }
 
-.hero-text h1{
-font-size:48px;
-margin-bottom:10px;
-}
 
-.hero-text h2{
-font-size:24px;
-color:#d4af37;
-margin-bottom:20px;
-}
+header p{
 
-.hero-text p{
 font-size:18px;
-margin-bottom:25px;
+
 }
+
 
 .btn{
+
 display:inline-block;
-padding:12px 24px;
-margin:5px;
-background:#d4af37;
-color:#000;
+
+background:#c9a227;
+
+color:#08152f;
+
+padding:13px 28px;
+
+margin:10px;
+
+border-radius:30px;
+
 text-decoration:none;
-border-radius:8px;
+
 font-weight:bold;
+
 transition:.3s;
+
 }
+
 
 .btn:hover{
+
 background:white;
+
 }
 
-.hero-image{
-flex:1;
-text-align:center;
-}
-
-.hero-image img{
-width:320px;
-max-width:100%;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-
-section{
-max-width:1200px;
-margin:50px auto;
-padding:20px;
-}
-
-.section-title{
-font-size:32px;
-text-align:center;
-margin-bottom:40px;
-color:#0F172A;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-footer{
-background:#0F172A;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:60px;
-}
-
-@media(max-width:768px){
 
 .container{
-flex-direction:column-reverse;
+
+max-width:1000px;
+
+margin:auto;
+
+padding:20px;
+
+}
+
+
+.box{
+
+background:white;
+
+padding:35px;
+
+margin:25px 0;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+border-top:4px solid #c9a227;
+
+}
+
+
+h2{
+
+color:#08152f;
+
+}
+
+
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+
+.card{
+
+background:#08152f;
+
+color:white;
+
+padding:25px;
+
+border-radius:12px;
+
 text-align:center;
-}
-
-.hero-text h1{
-font-size:34px;
-}
 
 }
+
+
+.card h3{
+
+color:#e5c45a;
+
+}
+
+
+.contact{
+
+text-align:center;
+
+background:#08152f;
+
+color:white;
+
+padding:40px;
+
+border-radius:15px;
+
+}
+
+
+footer{
+
+background:#050b18;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:30px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>وکیل علی آرمند</h1>
+
+<h2>وکیل پایه یک دادگستری کرمانشاه</h2>
+
+<p>
+ارائه خدمات تخصصی حقوقی و کیفری با رویکرد حرفه‌ای
+</p>
+
+
+<a class="btn" href="tel:09183564263">
+تماس مستقیم
+</a>
+
+
+<a class="btn" href="https://wa.me/989183564263">
+واتساپ
+</a>
+
+
+</header>
+
+
+
+<div class="container">
+
+
+<div class="box">
+
+<h2>
+درباره وکیل
+</h2>
+
+<p>
+
+اینجانب علی آرمند، وکیل پایه یک دادگستری، آماده ارائه خدمات تخصصی حقوقی و کیفری به شهروندان محترم کرمانشاه و سراسر کشور می‌باشم.
+
+هدف ما ارائه مشاوره دقیق، دفاع حرفه‌ای و پیگیری اصولی پرونده‌های حقوقی است.
+
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h2>
+خدمات حقوقی
+</h2>
+
+
+<div class="services">
+
+
+<div class="card">
+
+<h3>دعاوی حقوقی</h3>
+
+<p>
+پیگیری پرونده‌های ملکی، قراردادها، خانواده و امور حقوقی
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>دعاوی کیفری</h3>
+
+<p>
+دفاع تخصصی در پرونده‌های کیفری و دادگاه‌ها
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>مشاوره حقوقی</h3>
+
+<p>
+بررسی پرونده و ارائه بهترین مسیر قانونی
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>تنظیم لوایح</h3>
+
+<p>
+تنظیم دادخواست، شکواییه و دفاعیات حقوقی
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="contact">
+
+<h2 style="color:#e5c45a">
+
+ارتباط با دفتر
+
+</h2>
+
+
+<p>
+
+کرمانشاه، پارکینگ شهرداری، خیابان محمدتقی اصفهانی،
+ساختمان ابن سینا، طبقه پنجم
+
+</p>
+
+
+<h3>
+
+09183564263
+
+</h3>
+
+
+<a class="btn" href="tel:09183564263">
+رزرو مشاوره
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+© وکیل علی آرمند - وکیل پایه یک دادگستری کرمانشاه
+
+</footer>
+
+
+</body>
+
+</html>
