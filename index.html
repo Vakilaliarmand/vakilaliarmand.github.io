@@ -1,21 +1,27 @@
- .<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 
-<meta charset="UTF-8"> 
- 
+<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="bwK8Hc0xrRER8QLLSI8zzts1_2KXHWuGmM18tCmPca0" />
-<title>علی آرمند | وکیل پایه یک دادگستری عضو کانون وکلای کرمانشاه | وکیل حقوقی و کیفری</title><meta name="description" content="علی آرمند، وکیل پایه یک دادگستری عضو کانون وکلای کرمانشاه، ارائه خدمات وکالت و مشاوره حقوقی در دعاوی حقوقی، کیفری، ملکی، خانواده، قراردادها و امور تجاری.">
-<meta name="description" content="وکیل علی آرمند، وکیل پایه یک دادگستری عضو کانون وکلای کرمانشاه">
+
+<meta name="google-site-verification" content="bwK8Hc0xrRER8QLLSI8zzts1_2KXHWuGmM18tCmPca0">
+
+<title>علی آرمند | وکیل پایه یک دادگستری عضو کانون وکلای کرمانشاه | وکیل حقوقی و کیفری</title>
+
+<meta name="description" content="علی آرمند، وکیل پایه یک دادگستری عضو کانون وکلای کرمانشاه، ارائه خدمات وکالت و مشاوره حقوقی در دعاوی حقوقی، کیفری، ملکی، خانواده، قراردادها و امور تجاری.">
 
 <style>
 
-<style>
+*{
+box-sizing:border-box;
+}
 
 body{
 margin:0;
-font-family:tahoma;
+font-family:Tahoma, Arial, sans-serif;
 background:#f5f5f5;
 color:#333;
 line-height:2;
@@ -39,23 +45,44 @@ border:5px solid #c9a227;
 
 header h1{
 font-size:38px;
+margin:15px 0 5px;
 }
 
 header h2{
 color:#e2bd4b;
+font-size:21px;
+margin:5px 0 15px;
+}
+
+header p{
+max-width:850px;
+margin:10px auto;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+margin-top:25px;
 }
 
 .btn{
-display:inline-block;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-width:125px;
+padding:12px 20px;
+margin:0;
 background:#c9a227;
 color:#07152f;
-padding:12px 25px;
-margin:10px;
+border:none;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-font-family:tahoma;
-border:none;
+font-family:Tahoma, Arial, sans-serif;
+font-size:15px;
 cursor:pointer;
 transition:all 0.3s ease;
 }
@@ -65,21 +92,18 @@ transform:translateY(-2px);
 box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.contact-buttons{
-display:flex;
-justify-content:center;
-align-items:center;
-flex-wrap:wrap;
-gap:10px;
-margin-top:20px;
+.container{
+max-width:950px;
+margin:auto;
+padding:20px;
 }
+
 .box{
 background:white;
 padding:30px;
 margin:25px auto;
 max-width:900px;
 border-radius:15px;
-box-sizing:border-box;
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
 line-height:2;
 }
@@ -97,31 +121,139 @@ color:#07152f;
 
 .box h4{
 color:#1d3968;
+margin-top:25px;
 margin-bottom:5px;
-} 
-.contact-buttons .btn{
-min-width:125px;
-padding:12px 20px;
-margin:0;
-box-sizing:border-box;
-text-align:center;
 }
 
-.container{
-max-width:950px;
-margin:auto;
+.services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.card{
+background:#f8f8f8;
+border-right:4px solid #c9a227;
 padding:20px;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:0;
+color:#07152f;
+}
+
+.contact{
+background:white;
+padding:25px;
+margin:25px auto;
+max-width:900px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.contact h2{
+color:#07152f;
+}
+
+.form-section{
+background:white;
+padding:25px;
+margin:25px auto;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.form-section h2{
+color:#07152f;
+}
+
+.form-section input,
+.form-section textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-family:Tahoma, Arial, sans-serif;
+font-size:14px;
+}
+
+.form-section textarea{
+height:120px;
+resize:vertical;
+}
+
+.form-section .btn{
+margin-top:10px;
+}
+
+.articles{
+background:white;
+padding:30px;
+margin:25px auto;
+max-width:900px;
+border-radius:15px;
+line-height:2;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.articles h2{
+color:#07152f;
+border-bottom:2px solid #c9a227;
+padding-bottom:10px;
+}
+
+.articles h3 a{
+color:#07152f;
+text-decoration:none;
+}
+
+footer{
+background:#07152f;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:30px;
 }
 
 @media (max-width:600px){
+
+header{
+padding:35px 15px;
+}
+
+.profile{
+width:140px;
+height:140px;
+}
 
 header h1{
 font-size:30px;
 }
 
+header h2{
+font-size:18px;
+}
+
+.container{
+padding:10px;
+}
+
+.box{
+padding:20px;
+margin:18px auto;
+}
+
+.services{
+grid-template-columns:1fr;
+}
+
 .contact-buttons{
 gap:8px;
-padding:0 10px;
+padding:0 5px;
 }
 
 .contact-buttons .btn{
@@ -133,13 +265,22 @@ font-size:14px;
 }
 
 </style>
-</style>
+
 <script>
+
 function sendWhatsApp(){
 
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let message = document.getElementById("message").value;
+let name = document.getElementById("name").value.trim();
+let phone = document.getElementById("phone").value.trim();
+let message = document.getElementById("message").value.trim();
+
+if(!name || !phone){
+
+alert("لطفاً نام و شماره تماس را وارد کنید.");
+
+return;
+
+}
 
 let text =
 "درخواست مشاوره حقوقی\n" +
@@ -153,11 +294,12 @@ window.open(
 );
 
 }
+
 </script>
+
 </head>
 
 <body>
-
 
 <header>
 
@@ -165,17 +307,15 @@ window.open(
 
 <h1>علی آرمند</h1>
 
-<h2>  عضو کانون وکلای دادگستری کرمانشاه وکیل پایه یک دادگستری</h2>
+<h2>عضو کانون وکلای دادگستری کرمانشاه | وکیل پایه یک دادگستری</h2>
 
 <p>
 ارائه خدمات تخصصی حقوقی و قضایی در دعاوی حقوقی، کیفری، ملکی، خانواده و تجاری
 </p>
+
+<p>
 پذیرش تخصصی دعاوی حقوقی و کیفری
 </p>
-
-<a class="btn" href="tel:09183564263">
-تماس مستقیم
-</a>
 
 <div class="contact-buttons">
 
@@ -205,17 +345,13 @@ window.open(
 
 </div>
 
-<div class="container">
+</header>
 
 
 <div class="container">
 
-</div>
 
-
-<div class="container">
-
-</div>
+<!-- درباره من -->
 
 <div class="box">
 
@@ -223,7 +359,9 @@ window.open(
 
 <h3>علی آرمند</h3>
 
-<p><strong>وکیل پایه یک دادگستری</strong></p>
+<p>
+<strong>وکیل پایه یک دادگستری</strong>
+</p>
 
 <p>
 ارائه خدمات تخصصی حقوقی و قضایی در دعاوی حقوقی، کیفری، ملکی، ثبتی، خانواده و تجاری.
@@ -240,61 +378,73 @@ window.open(
 <h3>حوزه‌های فعالیت</h3>
 
 <h4>دعاوی حقوقی و مالی</h4>
+
 <p>
 مطالبه وجه و طلب، مطالبه خسارت، الزام به انجام تعهد، استرداد وجه و مال، فسخ و بطلان قرارداد، اختلافات ناشی از معاملات، دیون و تعهدات و سایر دعاوی مالی.
 </p>
 
 <h4>دعاوی ملکی و ثبتی</h4>
+
 <p>
 تنظیم قراردادهای مشارکت در ساخت، دعاوی مرتبط با قرارداد مشارکت در ساخت، دعاوی مالکیت، خلع ید، رفع تصرف و مزاحمت، الزام به تنظیم سند رسمی، ابطال سند و معامله، افراز و تفکیک، فروش ملک مشاع، سرقفلی و حق کسب و پیشه، اجاره و تخلیه، دعاوی اراضی ملی و موقوفه و سایر اختلافات ملکی و ثبتی.
 </p>
 
 <h4>دعاوی قراردادها و معاملات</h4>
+
 <p>
 تنظیم، بررسی و اصلاح قراردادهای تخصصی، قراردادهای خرید و فروش، اجاره، مشارکت در ساخت و قراردادهای تجاری و پیگیری دعاوی ناشی از فسخ، بطلان، انفساخ، عدم انجام تعهد و مطالبه خسارت.
 </p>
 
 <h4>دعاوی کیفری</h4>
+
 <p>
 دفاع و پیگیری پرونده‌های کلاهبرداری، خیانت در امانت، جعل و استفاده از سند مجعول، سرقت، تهدید، توهین، افترا، تخریب، انتقال مال غیر، تصرف عدوانی و جرایم مالی و ملکی و سایر دعاوی کیفری.
 </p>
 
 <h4>دعاوی خانواده</h4>
+
 <p>
 طلاق توافقی و دعاوی طلاق، مهریه، نفقه، اجرت‌المثل، حضانت و ملاقات فرزند، الزام به تمکین، اثبات یا انکار زوجیت و سایر دعاوی و امور خانواده.
 </p>
 
 <h4>دعاوی تجاری و شرکت‌ها</h4>
+
 <p>
 دعاوی مرتبط با شرکت‌ها و شرکا، مسئولیت مدیران، چک و اسناد تجاری، مطالبه وجه چک، ورشکستگی، انحلال شرکت، اختلافات تجاری، قراردادهای بازرگانی و علائم تجاری.
 </p>
 
 <h4>دعاوی مربوط به چک و اسناد تجاری</h4>
+
 <p>
 مطالبه وجه چک، صدور اجرائیه، دعاوی مرتبط با سفته و سایر اسناد تجاری، دفاع در برابر دعاوی ناشی از اسناد تجاری و پیگیری حقوقی و کیفری مرتبط با چک.
 </p>
 
 <h4>تصادفات و دعاوی مرتبط با خسارات</h4>
+
 <p>
 پیگیری حقوقی و کیفری ناشی از حوادث رانندگی، مطالبه خسارت، دیه و خسارات مالی و بدنی در حدود صلاحیت مراجع قانونی.
 </p>
 
 <h4>امور ارث و انحصار وراثت</h4>
+
 <p>
 انحصار وراثت، تقسیم ترکه، مطالبه سهم‌الارث، دعاوی مرتبط با ماترک، وصیت و اختلافات میان ورثه.
 </p>
 
 <h4>داوری و حل اختلاف</h4>
+
 <p>
 تنظیم و بررسی قراردادهای داوری، دفاع در فرآیند داوری، اعتراضات و پیگیری اجرای آرای داوری.
 </p>
 
 <h4>تنظیم اسناد و خدمات حقوقی</h4>
+
 <p>
 تنظیم و بررسی قرارداد، دادخواست، شکواییه، اظهارنامه، لوایح حقوقی و کیفری و ارائه مشاوره حقوقی پیش از انجام معاملات و تصمیمات مهم.
 </p>
 
 <h4>امور حقوقی ایرانیان خارج از کشور</h4>
+
 <p>
 قبول وکالت و پیگیری امور حقوقی، ملکی، ثبتی، قراردادی و قضایی ایرانیان خارج از کشور در ایران.
 </p>
@@ -306,54 +456,71 @@ window.open(
 </p>
 
 <p>
-<strong>دقت در تحلیل، صراحت در مشاوره و پیگیری مسئولانه پرونده؛ مبنای ارائه خدمات حقوقی است.</strong>
+<strong>
+دقت در تحلیل، صراحت در مشاوره و پیگیری مسئولانه پرونده؛ مبنای ارائه خدمات حقوقی است.
+</strong>
 </p>
 
 </div>
+
+
+<!-- خدمات حقوقی -->
 
 <div class="box">
 
 <h2>خدمات حقوقی</h2>
 
-
-
 <div class="services">
 
 <div class="card">
+
 <h3>دعاوی حقوقی</h3>
+
 <p>
 پرونده‌های ملکی، قراردادها، خانواده، مطالبات و اختلافات حقوقی
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h3>دعاوی کیفری</h3>
+
 <p>
 دفاع و پیگیری پرونده‌های کیفری در دادسرا و دادگاه
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h3>مشاوره حقوقی</h3>
+
 <p>
 بررسی پرونده و ارائه بهترین راهکار قانونی
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h3>تنظیم لوایح</h3>
+
 <p>
 تنظیم دادخواست، شکواییه و لوایح دفاعی
 </p>
-</div>
 
 </div>
 
 </div>
 
+</div>
+
+
+<!-- آدرس دفتر -->
 
 <div class="box">
 
@@ -366,10 +533,11 @@ window.open(
 </div>
 
 
+<!-- شماره تماس -->
 
 <div class="contact">
 
-<h2>شماره تماس</h2
+<h2>شماره تماس</h2>
 
 <p>
 09183564263
@@ -379,31 +547,59 @@ window.open(
 رزرو مشاوره
 </a>
 
-</div><section style="background:white; padding:25px; margin:20px auto; max-width:900px; border-radius:12px;">
+</div>
+
+
+<!-- درخواست مشاوره -->
+
+<section class="form-section">
 
 <h2>درخواست مشاوره حقوقی</h2>
 
-<p>برای دریافت مشاوره، اطلاعات خود را وارد کنید.</p>
+<p>
+برای دریافت مشاوره، اطلاعات خود را وارد کنید.
+</p>
 
-<input id="name" type="text" placeholder="نام و نام خانوادگی" style="width:100%;padding:12px;margin:8px 0;box-sizing:border-box;">
+<input
+id="name"
+type="text"
+placeholder="نام و نام خانوادگی">
 
-<input id="phone" type="tel" placeholder="شماره تماس" style="width:100%;padding:12px;margin:8px 0;box-sizing:border-box;">
+<input
+id="phone"
+type="tel"
+placeholder="شماره تماس">
 
-<textarea id="message" placeholder="توضیح کوتاه درباره پرونده" style="width:100%;height:120px;padding:12px;margin:8px 0;box-sizing:border-box;"></textarea>
+<textarea
+id="message"
+placeholder="توضیح کوتاه درباره پرونده"></textarea>
 
-<button type="button" onclick="sendWhatsApp()" style="background:#c9a227;color:#07152f;padding:12px 25px;border:0;border-radius:25px;font-weight:bold;">
+<button
+type="button"
+class="btn"
+onclick="sendWhatsApp()">
+
 ارسال درخواست به واتساپ
+
 </button>
 
 </section>
-<section style="background:white; padding:30px; margin:25px auto; max-width:900px; border-radius:15px; line-height:2;">
+
+
+<!-- مقالات -->
+
+<section class="articles">
 
 <h2>مقالات حقوقی</h2>
 
 <h3>
-<a href="mosharekat-dar-sakht.html" style="color:#07152f; text-decoration:none;">
+
+<a href="mosharekat-dar-sakht.html">
+
 بایسته‌های حقوقی قراردادهای مشارکت در ساخت
+
 </a>
+
 </h3>
 
 <p>
@@ -411,40 +607,23 @@ window.open(
 </p>
 
 <a class="btn" href="mosharekat-dar-sakht.html">
+
 مطالعه کامل مقاله
+
 </a>
 
 </section>
-<footer>
 
+
+</div>
+
+
+<footer>
 
 علی آرمند | عضو کانون وکلای دادگستری کرمانشاه | وکیل پایه یک دادگستری
 
 </footer>
 
 
-</div>
-
-<script>
-function sendWhatsApp(){
-
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let message = document.getElementById("message").value;
-
-let text =
-"درخواست مشاوره حقوقی\n" +
-"نام: " + name + "\n" +
-"شماره تماس: " + phone + "\n" +
-"توضیحات: " + message;
-
-window.location.href =
-"https://wa.me/989183564263?text=" + encodeURIComponent(text);
-
-}
-</script>
 </body>
-</html>
-
-
-
+ </html>
