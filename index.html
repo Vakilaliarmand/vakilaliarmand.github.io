@@ -409,6 +409,20 @@ window.open(
 function toggleMenu(){
     document.querySelector('.sidebar').classList.toggle('open');
 }
+ function toggleServices(){
+
+    const list = document.getElementById('servicesList');
+    const icon = document.getElementById('servicesIcon');
+
+    if(list.style.display === 'block'){
+        list.style.display = 'none';
+        icon.textContent = '+';
+    }else{
+        list.style.display = 'block';
+        icon.textContent = '−';
+    }
+
+}
 setTimeout(function(){
     const welcomeBox = document.getElementById('welcomeBox');
 
@@ -444,7 +458,38 @@ setTimeout(function(){
 <a href="about.html">
 درباره وکیل
 </a>
+<div class="menu-services">
 
+    <button onclick="toggleServices()">
+        خدمات حقوقی
+        <span id="servicesIcon">+</span>
+    </button>
+
+    <div id="servicesList">
+
+        <a href="#services">
+            تنظیم دادخواست
+        </a>
+
+        <a href="#services">
+            تنظیم شکواییه
+        </a>
+
+        <a href="#services">
+            تنظیم لایحه
+        </a>
+
+        <a href="#services">
+            مشاوره حقوقی
+        </a>
+
+        <a href="#services">
+            وکالت در دعاوی
+        </a>
+
+    </div>
+
+</div>
 <a href="fehrest.html">
 فهرست مقالات
 </a>
