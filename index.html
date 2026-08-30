@@ -262,18 +262,39 @@ padding:10px 14px;
 font-size:14px;
 }
 
-}
 .sidebar{
-    width:120px;
+    width:200px;
     position:fixed;
     right:0;
     top:0;
     height:100vh;
     background:#ffffff;
-    padding:30px 15px;
+    padding:70px 15px 20px;
     box-sizing:border-box;
+    box-shadow:-3px 0 10px rgba(0,0,0,0.15);
+    transform:translateX(100%);
+    transition:transform 0.3s ease;
+    z-index:999;
 }
 
+.sidebar.open{
+    transform:translateX(0);
+}
+
+.menu-btn{
+    position:fixed;
+    right:15px;
+    top:15px;
+    z-index:1000;
+    width:42px;
+    height:42px;
+    border:1px solid #c9a227;
+    border-radius:8px;
+    background:#ffffff;
+    color:#07152f;
+    font-size:24px;
+    cursor:pointer;
+} 
 .sidebar a{
     display:block;
     color:#07152f;
@@ -332,6 +353,9 @@ window.open(
 </head>
 
 <body>
+ <button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
 <div class="sidebar">
 
 <a href="index.html">
