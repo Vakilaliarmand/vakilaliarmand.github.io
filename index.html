@@ -365,18 +365,8 @@ window.open(
 "_blank"
 );
 function toggleMenu(){
-
-    const sidebar = document.querySelector('.sidebar');
-    const menuIcon = document.getElementById('menuIcon');
-
-    sidebar.classList.toggle('open');
-
-    if(sidebar.classList.contains('open')){
-        menuIcon.textContent = '×';
-    }else{
-        menuIcon.textContent = '☰';
-    }
-
+    document.querySelector('.sidebar').classList.toggle('open');
+}
 }
 </script>
 
