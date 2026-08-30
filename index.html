@@ -334,6 +334,45 @@ font-size:14px;
     background:#c9a227;
     color:#07152f;
 }
+ #welcomeBox{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:300px;
+    background:#ffffff;
+    border:1px solid #c9a227;
+    border-radius:12px;
+    padding:18px 20px;
+    box-sizing:border-box;
+    box-shadow:0 4px 18px rgba(0,0,0,0.18);
+    z-index:998;
+    text-align:right;
+}
+
+#welcomeBox strong{
+    display:block;
+    color:#07152f;
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+#welcomeBox p{
+    margin:0;
+    color:#444;
+    font-size:13px;
+    line-height:1.8;
+}
+
+#welcomeBox button{
+    position:absolute;
+    left:10px;
+    top:8px;
+    border:0;
+    background:none;
+    color:#777;
+    font-size:20px;
+    cursor:pointer;
+}
 </style>
 
 <script>
@@ -376,6 +415,15 @@ function toggleMenu(){
 </head>
 
 <body>
+ <div id="welcomeBox">
+    <button onclick="closeWelcome()">×</button>
+
+    <strong>خوش آمدید 🌷</strong>
+
+    <p>
+        به وب‌سایت علی آرمند، وکیل پایه یک دادگستری خوش آمدید.
+    </p>
+ </div>
  <button class="menu-btn" onclick="toggleMenu()">
 <span id="menuIcon">☰</span>
  </button>
