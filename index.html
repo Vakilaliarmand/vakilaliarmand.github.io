@@ -338,11 +338,11 @@ font-size:14px;
     position:fixed;
     bottom:15px;
     right:15px;
-    width:220px;
+    width:190px;
     background:#ffffff;
     border:1px solid #c9a227;
     border-radius:12px;
-    padding:18px 20px;
+    padding:10px 12px;
     box-sizing:border-box;
     box-shadow:0 4px 18px rgba(0,0,0,0.18);
     z-index:998;
@@ -360,7 +360,7 @@ font-size:14px;
     margin:0;
     color:#444;
     font-size:11px;
-    line-height:1.7;
+    line-height:1.8;
 }
 
 #welcomeBox button{
@@ -409,7 +409,13 @@ window.open(
 function toggleMenu(){
     document.querySelector('.sidebar').classList.toggle('open');
 }
+setTimeout(function(){
+    const welcomeBox = document.getElementById('welcomeBox');
 
+    if(welcomeBox){
+        welcomeBox.style.display = 'none';
+    }
+}, 5000);
 </script>
 
 </head>
@@ -419,10 +425,11 @@ function toggleMenu(){
     <button onclick="closeWelcome()">×</button>
 
     <strong>خوش آمدید 🌷</strong>
-
-    <p>
-        به وب‌سایت علی آرمند، وکیل پایه یک دادگستری خوش آمدید.
-    </p>
+<p>
+    به وب‌سایت علی آرمند،
+    <br>
+    وکیل پایه یک دادگستری خوش آمدید.
+</p>
  </div>
  <button class="menu-btn" onclick="toggleMenu()">
 <span id="menuIcon">☰</span>
