@@ -505,6 +505,98 @@ font-size:14px;
         gap:12px;
     }
 } 
+ .article-slider{
+    position:relative;
+    width:100%;
+    max-width:500px;
+    margin:30px auto;
+    overflow:hidden;
+}
+
+.article-track{
+    display:flex;
+    transition:transform 0.8s ease;
+    direction:ltr;
+}
+
+.article-slide{
+    min-width:100%;
+    padding:10px 42px;
+    box-sizing:border-box;
+    direction:rtl;
+}
+
+.article-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
+    text-align:center;
+}
+
+.article-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.article-card h3{
+    margin:15px 10px 8px;
+    color:#07152f;
+    font-size:19px;
+}
+
+.article-card a{
+    display:inline-block;
+    margin:5px 0 18px;
+    padding:9px 18px;
+    background:#c9a227;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.article-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:50%;
+    background:#c9a227;
+    color:white;
+    font-size:24px;
+    line-height:38px;
+    text-align:center;
+    z-index:5;
+}
+
+.article-prev{
+    right:3px;
+}
+
+.article-next{
+    left:3px;
+}
+
+@media(max-width:600px){
+
+    .article-slider{
+        width:100%;
+        margin:25px auto;
+    }
+
+    .article-slide{
+        padding:10px 40px;
+    }
+
+    .article-card img{
+        height:190px;
+    }
+
+}
 </style> 
 
 <script>
@@ -903,35 +995,71 @@ onclick="sendWhatsApp()">
 <p>قراردادها و دعاوی حقوقی</p>
 </a>
 
-<a class="article-folder" href="articles/keyfari/">
-🔨
+<div class="article-slider">
+
+<button class="article-arrow article-prev" onclick="moveArticles(1)">←</button>
+
+<div class="article-track" id="articleTrack">
+
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">⚖️</div>
+<h3>مقالات حقوقی</h3>
+<p>قراردادها و دعاوی حقوقی</p>
+<a href="articles/hoghooghi/">ورود به مقالات</a>
+</div>
+</div>
+
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">🔨</div>
 <h3>مقالات کیفری</h3>
 <p>دعاوی و مسائل کیفری</p>
-</a>
+<a href="articles/keyfari/">ورود به مقالات</a>
+</div>
+</div>
 
-<a class="article-folder" href="articles/sabti/">
-📑
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">📑</div>
 <h3>مقالات ثبتی</h3>
 <p>املاک و امور ثبتی</p>
-</a>
+<a href="articles/sabti/">ورود به مقالات</a>
+</div>
+</div>
 
-<a class="article-folder" href="articles/khanevadeh/">
-👨‍👩‍👧
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">👨‍👩‍👧</div>
 <h3>مقالات خانواده</h3>
 <p>طلاق، مهریه و نفقه</p>
-</a>
+<a href="articles/khanevadeh/">ورود به مقالات</a>
+</div>
+</div>
 
-<a class="article-folder" href="articles/melk/">
-🏠
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">🏠</div>
 <h3>مقالات ملکی</h3>
 <p>ملک و اختلافات ملکی</p>
-</a>
+<a href="articles/melk/">ورود به مقالات</a>
+</div>
+</div>
 
-<a class="article-folder" href="articles/tejari/">
-💼
+<div class="article-slide">
+<div class="article-card">
+<div class="article-image">💼</div>
 <h3>مقالات تجاری</h3>
 <p>شرکت‌ها و امور تجاری</p>
-</a>
+<a href="articles/tejari/">ورود به مقالات</a>
+</div>
+</div>
+
+</div>
+
+<button class="article-arrow article-next" onclick="moveArticles(-1)">→</button>
+
+</div>
 
 </div>
 <a class="btn" href="fehrest.html">
@@ -1116,5 +1244,25 @@ onclick="sendWhatsApp()">
     <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Rubika%20new%20icon.png"
          alt="روبیکا">
 </a>
+ <script>
+let articleIndex = 0;
+
+function moveArticles(direction){
+    const track = document.getElementById("articleTrack");
+    const total = document.querySelectorAll(".article-slide").length;
+
+    articleIndex += direction;
+
+    if(articleIndex < 0){
+        articleIndex = total - 1;
+    }
+
+    if(articleIndex >= total){
+        articleIndex = 0;
+    }
+
+    track.style.transform = "translateX(" + (articleIndex * 100) + "%)";
+}
+</script>
 </body>
  </html>
