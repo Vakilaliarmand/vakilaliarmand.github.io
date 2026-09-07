@@ -708,7 +708,221 @@ font-size:14px;
     }
 }
 </style> 
+<style>
+/* =========================================
+   ظاهر لوایح و قراردادها
+   تم: سرمه‌ای + طلایی + خاکستری روشن + سفید
+========================================= */
 
+.legal-forms-section {
+    background: #f4f5f7;
+    padding: 70px 20px;
+    direction: rtl;
+}
+
+.legal-forms-section .legal-forms-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.legal-forms-section .legal-forms-header h2 {
+    color: #10243e;
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.legal-forms-section .legal-forms-header p {
+    color: #6b7280;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* لیست اصلی */
+.legal-forms-section .legal-list {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* هر مورد */
+.legal-forms-section .legal-item {
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-right: 5px solid #c6a15b;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(16, 36, 62, 0.06);
+}
+
+
+/* دکمه عنوان */
+.legal-forms-section .legal-button {
+    width: 100%;
+    min-height: 70px;
+    padding: 18px 24px;
+    border: none;
+    background: #ffffff;
+    color: #10243e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    text-align: right;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* عنوان لایحه / قرارداد */
+.legal-forms-section .legal-title {
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.8;
+}
+
+
+/* علامت + */
+.legal-forms-section .legal-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 2px solid #c6a15b;
+    border-radius: 50%;
+
+    color: #c6a15b;
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-right: 15px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* حالت هاور */
+.legal-forms-section .legal-button:hover {
+    background: #10243e;
+    color: #ffffff;
+}
+
+.legal-forms-section .legal-button:hover .legal-icon {
+    background: #c6a15b;
+    color: #10243e;
+}
+
+
+/* متن بازشونده */
+.legal-forms-section .legal-content {
+    background: #fafafa;
+    border-top: 1px solid #e5e7eb;
+
+    padding: 28px 30px;
+
+    color: #374151;
+    font-size: 17px;
+    line-height: 2.1;
+
+    text-align: right;
+}
+
+
+/* تیترهای داخل متن */
+.legal-forms-section .legal-content strong {
+    color: #10243e;
+    font-weight: 900;
+}
+
+
+/* پاراگراف ها */
+.legal-forms-section .legal-content p {
+    margin: 0 0 18px;
+}
+
+
+/* هشدار پایانی */
+.legal-forms-section .legal-disclaimer {
+    max-width: 1050px;
+    margin: 35px auto 0;
+
+    padding: 22px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #dedede;
+    border-right: 5px solid #c6a15b;
+
+    border-radius: 10px;
+
+    color: #555;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.legal-forms-section .legal-disclaimer strong {
+    color: #10243e;
+}
+
+
+/* =========================================
+   موبایل
+========================================= */
+
+@media (max-width: 768px) {
+
+    .legal-forms-section {
+        padding: 50px 14px;
+    }
+
+    .legal-forms-section .legal-forms-header h2 {
+        font-size: 29px;
+    }
+
+    .legal-forms-section .legal-forms-header p {
+        font-size: 15px;
+    }
+
+    .legal-forms-section .legal-button {
+        min-height: 65px;
+        padding: 15px 16px;
+    }
+
+    .legal-forms-section .legal-title {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .legal-forms-section .legal-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 21px;
+        margin-right: 10px;
+    }
+
+    .legal-forms-section .legal-content {
+        padding: 22px 18px;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .legal-forms-section .legal-disclaimer {
+        padding: 18px;
+        font-size: 14px;
+    }
+}
+</style>
 <script>
 
 function sendWhatsApp(){
